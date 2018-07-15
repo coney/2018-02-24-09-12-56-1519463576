@@ -8,7 +8,6 @@ describe('get_integer_interval_2', function () {
   var collection_b = [10, 8, 6, 4, 2];
 
   it('根据给出的两个数字得到自增的偶数区间', function() {
-
     var result = get_integer_interval_2(1, 10);
     expect(result).toEqual(collection_a);
   });
