@@ -1,8 +1,10 @@
 'use strict';
 
 function choose_no_repeat_number(collection) {
+  let set = new Set();
+  collection.forEach(val => set.add(val));
+  return Array.from(set.keys());
 
-  //在这里写入代码
 }
 
 module.exports = choose_no_repeat_number;

@@ -1,8 +1,11 @@
 'use strict';
 
-function median_to_letter(collection) {
+var get_letter_interval = require('../../collectionOperator/get_letter_interval_2.js');
+var compute_median = require('../../reduce/compute_median.js');
 
-  //在这里写入代码
+function median_to_letter(collection) {
+  let index = Math.ceil(compute_median(collection));
+  return get_letter_interval(index, index)[0]
 }
 
 module.exports = median_to_letter;
